@@ -65,7 +65,7 @@ module Macinbox
     end
 
     def eject
-      max_attempts = 5
+      max_attempts = 300
       for attempt in 1..max_attempts
         begin
           quiet = $verbose ? [] : %W[ quiet ]
